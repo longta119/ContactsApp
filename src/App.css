@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  background-color: aqua;
+}
+
+.search-bar-container {
+  position: relative;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  padding-bottom: 0;
+  background-color: #fff;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.search-icon {
+  padding: 10px;
+  background: #f0f0f0;
+  border-right: 1px solid #ccc;
+}
+
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.suggestions-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions-list li:hover {
+  background: #f0f0f0;
+}
+
+.suggestion-name {
+  font-size: 18px;
+}
+
+.suggestion-phone {
+  font-size: 18px;
+  color: #454545;
+}
+
+.contact-details {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-details h2 {
+  margin: 0;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-details p {
+  margin: 5px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-bar button {
+    width: 100%;
+  }
+
+  .suggestions-list {
+    position: static;
+    border-top: 1px solid #ccc;
+  }
+
+  .suggestions-list li {
+    padding: 10px 5px;
+  }
+
+  .contact-details h2 {
+    font-size: 20px;
+  }
+
+  .contact-details p {
+    font-size: 14px;
+  }
+}
