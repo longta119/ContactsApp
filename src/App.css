@@ -39,9 +39,8 @@ h1 {
 }
 
 .search-icon {
-  padding: 10px;
-  background: #f0f0f0;
-  border-right: 1px solid #ccc;
+  margin-right: 5px;
+  font-size: 18px;
 }
 
 .suggestions-list {
